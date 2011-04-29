@@ -1,0 +1,19 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Vsix xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema" Version="1.0.0" xmlns="http://schemas.microsoft.com/developer/vsx-schema/2010">
+  <Identifier Id="86658643-3d17-4216-8f2c-b46d7a418138">
+    <Name>Moe</Name>
+    <Author>Senthil Kumar Selvaraj</Author>
+    <Version>0.1</Version>
+    <Description xml:space="preserve">Moe is an unit testing extension for AVR Studio.</Description>
+    <Locale>1033</Locale>
+    <InstalledByMsi>false</InstalledByMsi>
+    <SupportedProducts>
+      <IsolatedShell Version="5.0">AVRStudio</IsolatedShell>
+    </SupportedProducts>
+    <SupportedFrameworkRuntimeEdition MinVersion="4.0" MaxVersion="4.0" />
+  </Identifier>
+  <References />
+  <Content>
+    <VsPackage>|%CurrentProject%;PkgdefProjectOutputGroup|</VsPackage>
+  </Content>
+</Vsix>
