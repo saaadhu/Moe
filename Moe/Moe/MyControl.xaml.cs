@@ -24,7 +24,7 @@ namespace SenthilKumarSelvaraj.Moe
     /// </summary>
     public partial class MyControl : UserControl, INotifyPropertyChanged
     {
-        MoeEngine moeEngine = new MoeEngine();
+        MoeEngine moeEngine = MoeEngine.Instance;
         public MyControl()
         {
             InitializeComponent();

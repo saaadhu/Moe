@@ -109,7 +109,7 @@ namespace MoeTests
         [TestInitialize]
         public void Initialize()
         {
-            engine = new MoeEngine();
+            engine = MoeEngine.Instance;
         }
 
     }

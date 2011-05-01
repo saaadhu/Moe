@@ -61,7 +61,7 @@
       <LocationType>SourceLocation</LocationType>
       <TextPosition>
         <Version>4</Version>
-        <FileName>.\Tests\driver.c</FileName>
+        <FileName>.\Tests\moe.c</FileName>
         <startLine>26</startLine>
         <StartColumn>0</StartColumn>
         <EndLine>26</EndLine>
@@ -111,7 +111,7 @@
       <LocationType>SourceLocation</LocationType>
       <TextPosition>
         <Version>4</Version>
-        <FileName>.\Tests\driver.c</FileName>
+        <FileName>.\Tests\moe.c</FileName>
         <startLine>29</startLine>
         <StartColumn>0</StartColumn>
         <EndLine>29</EndLine>
@@ -161,7 +161,7 @@
       <LocationType>SourceLocation</LocationType>
       <TextPosition>
         <Version>4</Version>
-        <FileName>.\Tests\driver.c</FileName>
+        <FileName>.\Tests\moe.c</FileName>
         <startLine>31</startLine>
         <StartColumn>0</StartColumn>
         <EndLine>31</EndLine>
@@ -211,7 +211,7 @@
       <LocationType>SourceLocation</LocationType>
       <TextPosition>
         <Version>4</Version>
-        <FileName>.\Tests\driver.c</FileName>
+        <FileName>.\Tests\moe.c</FileName>
         <startLine>35</startLine>
         <StartColumn>0</StartColumn>
         <EndLine>35</EndLine>
@@ -261,7 +261,7 @@
       <LocationType>SourceLocation</LocationType>
       <TextPosition>
         <Version>4</Version>
-        <FileName>.\Tests\driver.c</FileName>
+        <FileName>.\Tests\moe.c</FileName>
         <startLine>37</startLine>
         <StartColumn>0</StartColumn>
         <EndLine>37</EndLine>
@@ -311,7 +311,7 @@
       <LocationType>SourceLocation</LocationType>
       <TextPosition>
         <Version>4</Version>
-        <FileName>.\Tests\driver.c</FileName>
+        <FileName>.\Tests\moe.c</FileName>
         <startLine>40</startLine>
         <StartColumn>0</StartColumn>
         <EndLine>40</EndLine>

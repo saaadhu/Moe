@@ -1,0 +1,32 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<VSTemplate Version="3.0.0" Type="Project" xmlns="http://schemas.microsoft.com/developer/vstemplate/2005">
+  <TemplateData>
+    <Name>Unit Test Project</Name>
+    <Description>Creates an unit test project</Description>
+    <Icon>UnitTestProjectTemplate.ico</Icon>
+    <ProjectType>AvrGCC</ProjectType>
+    <SortOrder>1000</SortOrder>
+    <TemplateID>18b65640-33d0-4090-8132-1a2e6bf64d00</TemplateID>
+    <CreateNewFolder>true</CreateNewFolder>
+    <DefaultName>TestProject</DefaultName>
+    <ProvideDefaultName>true</ProvideDefaultName>
+  </TemplateData>
+  <TemplateContent>
+    <Project File="Tests.avrgccproj" ReplaceParameters="true">
+      <ProjectItem ReplaceParameters="true" OpenInEditor="true">tests.c</ProjectItem>
+      <ProjectItem ReplaceParameters="true">tests.h</ProjectItem>
+      <ProjectItem ReplaceParameters="true">asserts.h</ProjectItem>
+      <ProjectItem ReplaceParameters="true">asserts.c</ProjectItem>
+      <ProjectItem ReplaceParameters="true">moe.h</ProjectItem>
+      <ProjectItem ReplaceParameters="true">moe.c</ProjectItem>
+    </Project>
+  </TemplateContent>
+  <WizardExtension>
+    <Assembly>
+      AvrGCC, Version=1.0.0.0, Culture=neutral, PublicKeyToken=d264112969646cc9
+    </Assembly>
+    <FullClassName>
+      Atmel.VsIde.AvrStudio.Project.Gcc.Wizard.GccProjectWizard
+    </FullClassName>
+  </WizardExtension>
+</VSTemplate>

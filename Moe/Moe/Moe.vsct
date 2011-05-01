@@ -42,14 +42,21 @@
          other menus or buttons (commands); from a visual point of view you can see the 
          group as the part of a menu contained between two lines. The parent of a group 
          must be a menu. -->
+    <Menus>
+      <Menu  guid="guidMoeCmdSet" id="cmdidTestMenu" type="Menu">
+        <Parent guid="guidSHLMainMenu" id="IDG_VS_MM_TOOLSADDINS" />
+        <Strings>
+          <MenuText>Test</MenuText>
+          <ButtonText>Test</ButtonText>
+          <CommandName>Test</CommandName>
+        </Strings>
+      </Menu>
+    </Menus>
+
     <Groups>
-
-      <Group guid="guidMoeCmdSet" id="MyMenuGroup" priority="0x0600">
-        <Parent guid="guidSHLMainMenu" id="IDM_VS_MENU_TOOLS"/>
+      <Group guid="guidMoeCmdSet" id="MyTestMenuGroup" priority="0x0600">
+        <Parent guid="guidMoeCmdSet" id="cmdidTestMenu"/>
       </Group>
-      
-
-
     </Groups>
     
     <!--Buttons section. -->
@@ -64,19 +71,18 @@
               <CommandFlag>DynamicVisibility</CommandFlag>
           If you do not want an image next to your command, remove the Icon node or set it to <Icon guid="guidOfficeIcon" id="msotcidNoIcon" /> -->
 
-      <Button guid="guidMoeCmdSet" id="cmdidMyCommand" priority="0x0100" type="Button">
-        <Parent guid="guidMoeCmdSet" id="MyMenuGroup" />
-        <Icon guid="guidImages" id="bmpPic1" />
+      <Button guid="guidMoeCmdSet" id="cmdidRunUnitTests" priority="0x0100" type="Button">
+        <Parent guid="guidMoeCmdSet" id="MyTestMenuGroup" />
         <Strings>
-          <CommandName>cmdidMyCommand</CommandName>
-          <ButtonText>My Command name</ButtonText>
+          <CommandName>cmdidRunUnitTests</CommandName>
+          <ButtonText>Run Unit Tests</ButtonText>
+          <CanonicalName>Moe.RunUnitTests</CanonicalName>
         </Strings>
       </Button>
 
 
       <Button guid="guidMoeCmdSet" id="cmdidUnitTestsWindow" priority="0x0100" type="Button">
         <Parent guid="guidSHLMainMenu" id="IDG_VS_WNDO_OTRWNDWS1"/>
-        <Icon guid="guidImages" id="bmpPic2" />
         <Strings>
           <CommandName>cmdidUnitTestsWindow</CommandName>
           <ButtonText>Unit Tests</ButtonText>
@@ -110,8 +116,9 @@
     <!-- This is the guid used to group the menu commands together -->
     <GuidSymbol name="guidMoeCmdSet" value="{039b49c1-2abd-415f-ae9c-817a16abdd38}">
 
-      <IDSymbol name="MyMenuGroup" value="0x1020" />
-      <IDSymbol name="cmdidMyCommand" value="0x0100" />
+      <IDSymbol name="MyTestMenuGroup" value="0x1020" />
+      <IDSymbol name="cmdidTestMenu" value="0x1021"/>
+      <IDSymbol name="cmdidRunUnitTests" value="0x0100" />
       <IDSymbol name="cmdidUnitTestsWindow" value="0x0101" />
     </GuidSymbol>
     

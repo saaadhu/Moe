@@ -1,0 +1,58 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectVersion>1.1</ProjectVersion>
+    <ProjectGuid>{2fddc52c-2ad1-4116-8544-0a6f5f9790c8}</ProjectGuid>
+    <avrdevice>$selecteddevice$</avrdevice>
+    <avrdeviceseries>$deviceseries$</avrdeviceseries>
+    <OutputType>Executable</OutputType>
+    <OutputFile>$(MSBuildProjectName).elf</OutputFile>
+    <OutputDirectory>$(MSBuildProjectDirectory)\$(Configuration)</OutputDirectory>
+    <AssemblyName>Tests</AssemblyName>
+    <Name>Tests</Name>
+    <IsTestProject>true</IsTestProject>
+    <RootNamespace>Tests</RootNamespace>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)' == 'Release' ">
+    <ToolchainSettings>
+       $releasetoolchainflags$
+    </ToolchainSettings>
+    $memorysettings$
+    <GenerateHexFile>True</GenerateHexFile>
+    <GenerateMapFile>True</GenerateMapFile>
+    <GenerateListFile>True</GenerateListFile>
+    <GenerateEepFile>True</GenerateEepFile>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)' == 'Debug' ">
+    <ToolchainSettings>
+      $debugtoolchainflags$
+    </ToolchainSettings>
+    $memorysettings$
+    <GenerateHexFile>True</GenerateHexFile>
+    <GenerateMapFile>True</GenerateMapFile>
+    <GenerateListFile>True</GenerateListFile>
+    <GenerateEepFile>True</GenerateEepFile>    
+  </PropertyGroup>
+  <ItemGroup>
+    <Compile Include="asserts.c">
+      <SubType>compile</SubType>
+    </Compile>
+    <Compile Include="asserts.h">
+      <SubType>compile</SubType>
+    </Compile>
+    <Compile Include="moe.c">
+      <SubType>compile</SubType>
+    </Compile>
+    <Compile Include="moe.h">
+      <SubType>compile</SubType>
+    </Compile>
+    <Compile Include="tests.c">
+      <SubType>compile</SubType>
+    </Compile>
+    <Compile Include="tests.h">
+      <SubType>compile</SubType>
+    </Compile>
+  </ItemGroup>
+  <Import Project="$targetstoimport$" />
+</Project>

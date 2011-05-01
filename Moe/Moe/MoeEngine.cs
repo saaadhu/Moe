@@ -9,6 +9,14 @@ namespace SenthilKumarSelvaraj.Moe
 {
     public class MoeEngine
     {
+        private MoeEngine() { }
+        static MoeEngine engine = new MoeEngine();
+
+        public static MoeEngine Instance
+        {
+            get { return engine; }
+        }
+
         private Test currentlyRunningTest = null;
         private int completedTests = 0;
         public State CurrentState { get; private set; }

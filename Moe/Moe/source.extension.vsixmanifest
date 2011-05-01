@@ -4,7 +4,7 @@
     <Name>Moe</Name>
     <Author>Senthil Kumar Selvaraj</Author>
     <Version>0.1</Version>
-    <Description xml:space="preserve">Moe is an unit testing extension for AVR Studio.</Description>
+    <Description xml:space="preserve">Moe is an AVR Studio extension that lets you run unit tests from within the IDE.</Description>
     <Locale>1033</Locale>
     <InstalledByMsi>false</InstalledByMsi>
     <SupportedProducts>
@@ -15,5 +15,7 @@
   <References />
   <Content>
     <VsPackage>|%CurrentProject%;PkgdefProjectOutputGroup|</VsPackage>
+    <CustomExtension Type="XML File">MoeTracePoints.xml</CustomExtension>
+    <ProjectTemplate>ProjectTemplates</ProjectTemplate>
   </Content>
 </Vsix>
